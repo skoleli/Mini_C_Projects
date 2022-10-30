@@ -27,11 +27,11 @@ Ornek kullanimi asagidaki gibidir:
 C:\> CSV2JSON.exe deneme.csv sonuc.json header=OFF
 ```
 
-### Format Hakkinda
+### Uyarilar
 
 Eger uygulama kendi icinde hatalar alirsa, cesitli uyari mesajlari verir.
 
-Ornegin calisma esnasinda yeterli arguman verilmezse asagidaki hatayi gonderir:
+Ilk calistirirken yeterli arguman verilmezse asagidaki hatayi gonderir:
 
 ```
 PS C:\> .\main.exe a b c d e                        
@@ -46,3 +46,17 @@ CSV2JSON.exe kaynak.csv sonuc.json header=OFF
 ##################################################
 ```
 
+Basarili bir sekilde calistirildiysa ama verilen dosya isimlerinde bir sorun varsa asagidaki sekilde uyari vererek programi sonlandirir:
+
+```
+C:\Users\silak\Desktop\csvtojson> .\main.exe dosya.csv sonuc.json header=ON   
+dosya.csv dosyasi acilamadi!
+```
+
+Programa arguman sayisi dogru verilip dosyalari acmada bir problem yasanmadiysa ama header parametresinde kullanim kontrol edilir. Yanlissa asagidaki uyari verilir ve program sonlandirilir:
+
+```
+C:\> .\main.exe 0.csv sonuc.json header=of       
+header parametresini gozden gecirin!
+dogru kullanim: header=ON
+```
