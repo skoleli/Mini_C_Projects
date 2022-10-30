@@ -62,3 +62,46 @@ C:\> .\main.exe 0.csv sonuc.json header=of
 header parametresini gozden gecirin!
 dogru kullanim: header=ON
 ```
+
+### Ornek calisma:
+
+Asagidaki bilgileri iceren CSV formatli bir dosya,
+
+```
+OKULNO,AD,SOYAD,BOLUM
+1,ayse,yilmaz,ogretmen
+2,fatma,yilmaz,muhendis
+3,hayriye,yilmaz,siyaset
+4,ahmet,korkmaz,ekonomi
+```
+
+programa ```header=ON``` parametresiyle girildiginde asagidaki gibi gorunur:
+
+```
+{
+	"satir1" : {
+		"OKULNO":"1",
+		"AD":"ayse",
+		"SOYAD":"yilmaz",
+		"BOLUM":"ogretmen"
+	},
+	"satir2" : {
+		"OKULNO":"2",
+		"AD":"fatma",
+		"SOYAD":"yilmaz",
+		"BOLUM":"muhendis"
+	},
+	"satir3" : {
+		"OKULNO":"3",
+		"AD":"hayriye",
+		"SOYAD":"yilmaz",
+		"BOLUM":"siyaset"
+	},
+	"satir4" : {
+		"OKULNO":"4",
+		"AD":"ahmet",
+		"SOYAD":"korkmaz",
+		"BOLUM":"ekonomi"
+	}
+}
+```
