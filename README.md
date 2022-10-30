@@ -7,12 +7,42 @@
 
 ## About <a name = "about"></a>
 
-Bu proje verilen .csv uzantili dosyayi, istenen bir .json dosyasina cevirir. 
+Bu projenin amaci CSV formatli bir dosyayi, JSON formatina cevirmektir.
+
+Tamamen C programlama dili  ile yazilmistir. 
 
 ## Usage <a name = "usage"></a>
 
-### Ornek Calistirma:
+### Uygulama Kullanimi
+
+Uygulama calistirilirken asagidaki format izlenmelidir:
 
 ```
-C:\> CSV2JSON deneme.csv sonuc.json header=OFF
+CSV2JSON <CSV dosya adı> <json dosya adı> <header=ON | OFF>
 ```
+
+Ornek kullanimi asagidaki gibidir:
+
+```
+C:\> CSV2JSON.exe deneme.csv sonuc.json header=OFF
+```
+
+### Format Hakkinda
+
+Eger uygulama kendi icinde hatalar alirsa, cesitli uyari mesajlari verir.
+
+Ornegin calisma esnasinda yeterli arguman verilmezse asagidaki hatayi gonderir:
+
+```
+PS C:\> .\main.exe a b c d e                        
+
+Hatali kullanim!
+
+##################################################
+
+Ornek kullanim formati:
+CSV2JSON.exe kaynak.csv sonuc.json header=OFF
+
+##################################################
+```
+
