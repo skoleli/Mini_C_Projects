@@ -11,6 +11,8 @@ Bu projenin amaci CSV formatli bir dosyayi, JSON formatina cevirmektir.
 
 Tamamen C programlama dili  ile yazilmistir. 
 
+Program calistirilirken bir ```header``` parametresi girilir ve bu parametre, ilk kolonlarin JSON formatli dosyada kolon ismi olarak kullanilip kullanilmayacagini belirler.
+
 ## Usage <a name = "usage"></a>
 
 ### Uygulama Kullanimi
